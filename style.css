@@ -16,7 +16,7 @@
     1.0 - General
     2.0 - Typography
     3.0 - Global Style
-    4.0 - Header section 
+    4.0 - Header section
     5.0 - Slider area
     6.0 - Block area
     7.0 - Intro section
@@ -41,8 +41,8 @@
 
 /* ================= General ==================== */
 html,
-body { 
-	height: 100% 
+body {
+	height: 100%
 }
 body {
     font-family: 'PT Serif', serif;
@@ -77,7 +77,7 @@ a,
     -moz-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 
@@ -137,7 +137,7 @@ h6{
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus,
-.btn-primary:active:focus, 
+.btn-primary:active:focus,
 .btn-primary:active:hover {
     background-color: #3452ff;
     border-color: #3452ff;
@@ -152,7 +152,7 @@ h6{
 
 
 /* ================ Global setting ================== */
-input:focus, 
+input:focus,
 textarea:focus {
 	outline: none;
 }
@@ -196,8 +196,8 @@ img {
 
 
 /* Remove Chrome Input Field's Unwanted Yellow Background Color */
-input:-webkit-autofill, 
-input:-webkit-autofill:hover, 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
     -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
@@ -213,12 +213,12 @@ input:-webkit-autofill:focus {
 
 /* ================ Header section ================== */
 
-/* header top bar 
+/* header top bar
 ------------------------*/
 .header-top-area{
-	height: 50px; 
+	height: 50px;
 	background: #3452FF;
-	font-size: 14px; 
+	font-size: 14px;
 	color: #FFFFFF;
 	font-family: "Titillium Web",sans-serif;
 }
@@ -257,15 +257,15 @@ input:-webkit-autofill:focus {
 .social-icon ul li a{
 	color: #fff;
 	font-size: 14px;
-	width: 28px; 
-	height: 28px; 
+	width: 28px;
+	height: 28px;
 	text-align: center;
 	margin-left: 12px;
 	display: block;
 	line-height: 28px;
 	transition: all .3s;
 }
-.social-icon ul li a:hover, 
+.social-icon ul li a:hover,
 .social-icon ul li.active a{
 	background: #fff;
 	color: #3452FF;
@@ -318,7 +318,7 @@ nav.navbar.bootsnav ul.nav > li>.dropdown-menu.megamenu-content .menu-col li.act
 }
 .dropdown-menu.cart-list h2 a:hover {
 	color: #3452ff;
-} 
+}
 
 @media (min-width: 993px) {
 	nav.navbar.bootsnav ul.nav > li > a {
@@ -332,9 +332,9 @@ nav.navbar.bootsnav ul.nav > li>.dropdown-menu.megamenu-content .menu-col li.act
 
 
 @media (min-width: 768px) {
-	.navbar>.container .navbar-brand, 
+	.navbar>.container .navbar-brand,
 	.navbar>.container-fluid .navbar-brand {
-	    margin-top: 15px;
+	    margin-top: 1px;
 	}
 }
 
@@ -372,10 +372,10 @@ ul.cart-list>li.total>a.btn:hover {
 }
 .homepage-slider:after{
 	content: "";
-	position: absolute; 
-	top: 0px; 
-	left: 0px; 
-	height: 100%; 
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
 	width: 100%;
 	background: rgba(46, 46, 46, .4);
 	z-index: -1;
@@ -404,7 +404,7 @@ ul.cart-list>li.total>a.btn:hover {
 }
 .slider-content a{
 	border-radius: 5px;
-	background: #3452FF; 
+	background: #3452FF;
 	padding: 15px 25px;
 	border: none;
 	color: #fff;
@@ -439,7 +439,7 @@ ul.cart-list>li.total>a.btn:hover {
 	}
 }
 
-/* owl-carousel 
+/* owl-carousel
 -----------------------------*/
 
 .owl-nav div {
@@ -496,7 +496,7 @@ ul.cart-list>li.total>a.btn:hover {
 }
 
 .block-text h2{
-	margin-bottom: 50px; 
+	margin-bottom: 50px;
 }
 .block-text p{
 	margin-bottom: 60px;
@@ -568,8 +568,8 @@ ul.cart-list>li.total>a.btn:hover {
 .intro-img:after{
 	content: "";
 	position: absolute;
-	top: 0px; 
-	left: 0px; 
+	top: 0px;
+	left: 0px;
 	width: 100%;
 	height: 100%;
 	background: rgba(52, 82, 255, .8);
@@ -580,7 +580,7 @@ ul.cart-list>li.total>a.btn:hover {
 .single-intro:hover .intro-img:after{
 	opacity: 1;
 }
-.single-intro:hover 
+.single-intro:hover
 .intro-details{
 	border-bottom: 4px solid #3452FF;
 }
@@ -649,7 +649,7 @@ ul.cart-list>li.total>a.btn:hover {
 	filter: grayscale(100%);
 }
 
-/* services animation effect 
+/* services animation effect
 ----------------------------------*/
 
 @-webkit-keyframes hvr-buzz-out {
@@ -758,7 +758,7 @@ ul.cart-list>li.total>a.btn:hover {
 /* ================ Breadcrumb style ================== */
 
 .page-title{
-	background: url("assets/img/breadcrumb.jpg") no-repeat;
+	background: url("assets/img/banner1.jpg") no-repeat;
 	background-size: cover;
 	background-position: center;
 	padding: 95px 0px;
@@ -889,9 +889,9 @@ ul.cart-list>li.total>a.btn:hover {
 	color: #fff;
 }
 
-/* portfolio-single-page 
+/* portfolio-single-page
 ------------------------------------*/
-.single-portfolio-wrapper, 
+.single-portfolio-wrapper,
 .single-portfolio-wrapper a{
 	font-family: "Titillium Web",sans-serif;
 }
@@ -996,7 +996,7 @@ a:focus{
 	font-size: 15px;
 }
 
-/* preloader  
+/* preloader
 -------------------------------*/
 
 #loading{
@@ -1020,7 +1020,7 @@ a:focus{
 	height: 200px;
 	width: 200px;
 	margin-top: -100px;
-	margin-left: -100px;	
+	margin-left: -100px;
 }
 .object{
 	-moz-border-radius: 50% 50% 50% 50%;
@@ -1032,14 +1032,14 @@ a:focus{
 	border-top: 5px solid transparent;
 	border-bottom: 5px solid transparent;
 	-webkit-animation: animate 2s infinite;
-	animation: animate 2s infinite;	
+	animation: animate 2s infinite;
 }
 #object_one{
 	left: 75px;
 	top: 75px;
 	width: 50px;
 	height: 50px;
-}		
+}
 #object_two{
 	left: 65px;
 	top: 65px;
@@ -1063,32 +1063,32 @@ a:focus{
 	height: 110px;
 	-webkit-animation-delay: 0.3s;
 	animation-delay: 0.3s;
-}	
+}
 
 @-webkit-keyframes animate {
 	50% {
-		-ms-transform: rotate(180deg); 
-		-webkit-transform: rotate(180deg); 
-		transform: rotate(180deg); 
+		-ms-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
 	}
 	100% {
-		-ms-transform: rotate(0deg); 
-		-webkit-transform: rotate(0deg); 
-		transform: rotate(0deg); 
-	}	  
+		-ms-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
 }
 
 @keyframes animate {
 	50% {
-		-ms-transform: rotate(180deg); 
-		-webkit-transform: rotate(180deg); 
-		transform: rotate(180deg); 
+		-ms-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
 	}
 	100% {
-		-ms-transform: rotate(0deg); 
-		-webkit-transform: rotate(0deg); 
-		transform: rotate(0deg); 
-	}	  
+		-ms-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
 }
 
 /* ================ Blog Section ================== */
@@ -1169,7 +1169,7 @@ a:focus{
 	color: #3452FF;
 }
 
-/* single blog 
+/* single blog
 ---------------------------------------*/
 
 .post-wrapper{
@@ -1239,7 +1239,7 @@ li.rating ul i {
 	margin-right: -20px;
 }
 
-/* single page social icon 
+/* single page social icon
 -------------------------------*/
 .social-link{
 	overflow: hidden;
@@ -1303,7 +1303,7 @@ li.rating ul i {
 	padding-right: 15px;
 }
 
-/* comments form 
+/* comments form
 ------------------------------*/
 .comments-wrapper{
 	padding: 15px 40px;
@@ -1315,7 +1315,7 @@ li.rating ul i {
 	margin-bottom: 40px;
 }
 
-/* comments media 
+/* comments media
 --------------------------*/
 
 .comments-responsed-wrapper {
@@ -1428,7 +1428,7 @@ li.rating ul i {
 	margin-bottom: 50px;
 }
 .footer-widget span{
-	font-size: 13px; 
+	font-size: 13px;
 	color: #fff;
 }
 .footer-widget p, .footer-widget a{
@@ -1518,7 +1518,7 @@ li.rating ul i {
 	color: #3c763d !important;
 }
 
-/* footer bottom 
+/* footer bottom
 --------------------------------*/
 .copyright-wrapper{
 	background: #00021C;
