@@ -203,8 +203,8 @@ input:-webkit-autofill:focus {
 }
 /* helper classes */
 .section-padding {
-	padding-top: 120px;
-	padding-bottom: 90px;
+	padding-top: 80px;
+	padding-bottom: 60px;
 }
 
 .darker-bg {
@@ -217,7 +217,7 @@ input:-webkit-autofill:focus {
 ------------------------*/
 .header-top-area{
 	height: 50px;
-	background: #3452FF;
+	background: #9200FF;
 	font-size: 14px;
 	color: #FFFFFF;
 	font-family: "Titillium Web",sans-serif;
@@ -805,7 +805,7 @@ ul.cart-list>li.total>a.btn:hover {
 	position: relative;
 }
 .panel-title > a[aria-expanded=true]{
-	background: #3452FF;
+	background: #9200FF;
 	color: #fff;
 }
 .panel-title > a[aria-expanded=true]:after{
@@ -817,7 +817,7 @@ ul.cart-list>li.total>a.btn:hover {
 	text-decoration: none;
 }
 .panel-title > a:after{
-	background: #3452ff none repeat scroll 0 0;
+	background: #9200FF none repeat scroll 0 0;
 	border-radius: 2px;
 	color: #fff;
 	content: "+";
@@ -1000,7 +1000,7 @@ a:focus{
 -------------------------------*/
 
 #loading{
-	background-color: #3452FF;
+	background-color: #9200FF;
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -1521,12 +1521,19 @@ li.rating ul i {
 /* footer bottom
 --------------------------------*/
 .copyright-wrapper{
-	background: #00021C;
+	background: #1E0034;
 	padding: 40px 0px;
 }
 .copyright-wrapper p{
 	color: #a0a2b1;
 }
 .copyright-wrapper a{
+	color: #fff;
+}
+
+
+/* extra styles
+-------------------------- */
+.whiteText{
 	color: #fff;
 }
