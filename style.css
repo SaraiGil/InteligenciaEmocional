@@ -622,7 +622,8 @@ ul.cart-list>li.total>a.btn:hover {
 	transition: all .3s;
 }
 .services-tiem h3:hover{
-	color: #000;
+	color: #3452FF;
+	cursor: pointer;
 }
 .services-tiem a{
 	color: #212121;
