@@ -165,6 +165,20 @@ img {
     height: auto;
 }
 
+.prueba, .prueba2{
+	/* background-color: green !important; */
+	display : flex;
+	justify-content:center;
+	align-items:center;}
+
+.centerText{text-align: center;}
+
+.imgAbout{
+  height: 250px;
+  width: 250px;
+  border-radius: 150px;
+}
+
 .form-group {
     margin-bottom: 30px;
 }
