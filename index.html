@@ -38,10 +38,19 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+
+		<link rel="stylesheet" type="text/css" href="assets/css/partner_style.css">
+		<script type="text/javascript" src="assets/js/partner_brain.js"></script>
 	</head>
 
 
-	<body>
+	<body onload="live()">
+		<audio id="audioPlayer" src=""></audio>
+		<div id="divBtnMute"><button onclick="mute()">Silencio</button></div>
+		<div id="virtualPartner"><img src="assets/img/partner.png" onclick="walkOut()"></div>
+		<div id="virtualPartnerSpeechBubble" class="speech-bubble">
+			<p>Hello!</p>
+		</div>
 
 		<!-- ::::::::::::::::::::: Header Section:::::::::::::::::::::::::: -->
 		<header>

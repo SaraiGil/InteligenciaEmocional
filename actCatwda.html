@@ -8,7 +8,7 @@
         <meta name="keywords" content="advisor, corporate accountant, finance, financial, insurance, investment, consultation">
         <meta name="author" content="trendytheme.net">
 
-		<title>Neuron Finance</title>
+		<title>Actividad</title>
 
         <!--  favicon -->
         <link rel="shortcut icon" href="assets/img/ico/favicon.png">
@@ -38,10 +38,20 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="assets/css/partner_style.css">
+		<script type="text/javascript" src="assets/js/partner_brain.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/crucigrama.css">
+		<script type="text/javascript" src="assets/js/crucigrama.js"></script>
 	</head>
 
 
-	<body>
+	<body onload="live(false)">
+		<audio id="audioPlayer" src=""></audio>
+		<div id="divBtnMute"><button onclick="mute()">Silencio</button></div>
+		<div id="virtualPartner"><img src="assets/img/partner.png" onclick="walkOut()"></div>
+		<div id="virtualPartnerSpeechBubble" class="speech-bubble">
+			<p>Hello!</p>
+		</div>
 
 		<!-- ::::::::::::::::::::: Header Section:::::::::::::::::::::::::: -->
 		<header>
@@ -55,7 +65,6 @@
 	        <!-- Start Navigation -->
 	        <nav class="navbar navbar-default navbar-sticky bootsnav">
 	            <div class="container">
-	                <!-- Start Header Navigation -->
 	                <div class="navbar-header">
 	                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 	                        <i class="fa fa-bars"></i>
@@ -95,8 +104,7 @@
 					<div class="col-md-12">
 						<!-- breadcrumb content -->
 						<div class="page-breadcrumbd">
-							<h2>Portfolio Details</h2>
-							<p><a href="index.html">Home</a> / <a href="#">Portfolio</a> / Portfolio Details</p>
+							<h2>Actividad</h2>
 						</div><!-- end breadcrumb content -->
 					</div>
 				</div>
@@ -104,133 +112,288 @@
 		</section><!-- end breadcrumb -->
 
 
-	<!-- start portfolio single -->
-	<section class="single-portfolio-wrapper section-padding">
+	<section class="section-padding">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
-					<!-- single portfolio images -->
-					<div class="single-portfolio-images">
-						<img class="img-responsive" src="assets/img/portfolio-details.jpg" alt="" />
-					</div>
+				<div style="width: 40%; float: right; top: 0;">
+					Preguntas
+					<ol>
+						<li>Palabra alemana para 'opinion del mundo'</li>
+						<li>Propietario del sistema</li>
+						<li>Quienes transforman las entradas en salidas</li>
+						<li>Elementos externos al sistema.</li>
+						<li>Esto se muestra como la conversión de la entrada de información a la producción</li>
+						<li>Puede ganar beneficios del sistema</li>
+					</ol>
 				</div>
-				<div class="col-md-4">
-					<!-- single portfolio info -->
-					<div class="single-portfolio-inner">
-						<header class="single-portfolio-title">
-							<a>ISO Design</a>
-							<h2>IOS Game Design prototype</h2>
-						</header>
-						<div class="portfolio-details-panel">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-
-							<ul class="portfolio-meta">
-								<li><span> Client </span> Themeforest</li>
-								<li><span> Created by </span> John Doe</li>
-								<li><span> Completed on </span> 17 Oct 2016</li>
-								<li><span> Skills </span> HTML5 / PHP / CSS3</li>
-								<li><span> Share </span> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-pinterest"></i></a></li>
-							</ul>
-						</div>
-						<a class="btn btn-primary" href="#."> Visit website </a>
-					</div>
-				</div>
+				<table style="width:50%">
+				  <tr>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra1" maxlength="1" placeholder="1"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  </tr>
+				  <tr>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra2" maxlength="1" placeholder="1"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra3" maxlength="1" placeholder="2"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  </tr>
+				  <tr>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra4" maxlength="1" placeholder="1"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra5" maxlength="1" placeholder="2"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  </tr>
+				  <tr>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra6" maxlength="1" placeholder="3"></td>
+				  	<td><input type="text" id="letra7" maxlength="1" placeholder="3"></td>
+				  	<td><input type="text" id="letra8" maxlength="1" placeholder="1/3"></td>
+				  	<td><input type="text" id="letra9" maxlength="1" placeholder="3"></td>
+				  	<td><input type="text" id="letra10" maxlength="1" placeholder="3"></td>
+				  	<td><input type="text" id="letra11" maxlength="1" placeholder="2/3"></td>
+				  	<td><input type="text" id="letra12" maxlength="1" placeholder="3"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  </tr>
+				  <tr>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra13" maxlength="1" placeholder="4"></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra14" maxlength="1" placeholder="1"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra15" maxlength="1" placeholder="2"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  </tr>
+				  <tr>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra16" maxlength="1" placeholder="4"></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra17" maxlength="1" placeholder="1"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra18" maxlength="1" placeholder="2"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  </tr>
+				  <tr>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra19" maxlength="1" placeholder="4"></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra20" maxlength="1" placeholder="1"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra21" maxlength="1" placeholder="2"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  </tr>
+				  <tr>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra22" maxlength="1" placeholder="4"></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra23" maxlength="1" placeholder="1"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  </tr>
+				  <tr>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra24" maxlength="1" placeholder="4"></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra25" maxlength="1" placeholder="1"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  </tr>
+				  <tr>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra26" maxlength="1" placeholder="4/5"></td>
+				  	<td><input type="text" id="letra27" maxlength="1" placeholder="5"></td>
+				  	<td><input type="text" id="letra28" maxlength="1" placeholder="1/5"></td>
+				  	<td><input type="text" id="letra29" maxlength="1" placeholder="5"></td>
+				  	<td><input type="text" id="letra30" maxlength="1" placeholder="5"></td>
+				  	<td><input type="text" id="letra31" maxlength="1" placeholder="5"></td>
+				  	<td><input type="text" id="letra32" maxlength="1" placeholder="5"></td>
+				  	<td><input type="text" id="letra33" maxlength="1" placeholder="5"></td>
+				  	<td><input type="text" id="letra34" maxlength="1" placeholder="5"></td>
+				  	<td><input type="text" id="letra35" maxlength="1" placeholder="5"></td>
+				  	<td><input type="text" id="letra36" maxlength="1" placeholder="5"></td>
+				  	<td><input type="text" id="letra37" maxlength="1" placeholder="5"></td>
+				  	<td><input type="text" id="letra38" maxlength="1" placeholder="5"></td>
+				  	<td><input type="text" id="letra39" maxlength="1" placeholder="5"></td>
+				  </tr>
+				  <tr>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra40" maxlength="1" placeholder="4"></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra41" maxlength="1" placeholder="1"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  </tr>
+				  <tr>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra42" maxlength="1" placeholder="1"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  </tr>
+				  <tr>
+				  	<td><input type="text" id="letra43" maxlength="1" placeholder="6"></td>
+				  	<td><input type="text" id="letra44" maxlength="1" placeholder="6"></td>
+				  	<td><input type="text" id="letra45" maxlength="1" placeholder="6"></td>
+				  	<td><input type="text" id="letra46" maxlength="1" placeholder="6"></td>
+				  	<td><input type="text" id="letra47" maxlength="1" placeholder="1/6"></td>
+				  	<td><input type="text" id="letra48" maxlength="1" placeholder="6"></td>
+				  	<td><input type="text" id="letra49" maxlength="1" placeholder="6"></td>
+				  	<td><input type="text" id="letra50" maxlength="1" placeholder="6"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  </tr>
+				  <tr>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td><input type="text" id="letra51" maxlength="1" placeholder="1"></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  	<td></td>
+				  </tr>
+				</table>
+				<button onclick="revisarCrucigrama()">Revisar</button>
 			</div>
 		</div>
 	</section>
 
 		<!-- ::::::::::::::::::::: Footer Section:::::::::::::::::::::::::: -->
 		<footer>
-			<div class="primary-footer">
-				<div class="container">
-					<div class="row">
-						<!-- start single footer widget -->
-						<div class="col-sm-6 col-md-4">
-							<div class="footer-widget about-us">
-								<a href="index.html"><img src="assets/img/logo-white.png" alt="" /></a>
-								<p>Collaboratively create resource sucking manufactured products and worldwide e-services. Seamlessly revol tionize holistic data rather than intermandated results. Energistically innovate open-source systems for performance based total.</p>
-								<div class="online-card">
-									<a href="#"><img src="assets/img/online-card/1.png" alt="" /></a>
-									<a href="#"><img src="assets/img/online-card/2.png" alt="" /></a>
-									<a href="#"><img src="assets/img/online-card/3.png" alt="" /></a>
-									<a href="#"><img src="assets/img/online-card/4.png" alt="" /></a>
-								</div>
-							</div>
-						</div><!-- end single footer widget -->
-
-						<!-- start single footer widget -->
-						<div class="col-sm-6 col-md-2">
-							<div class="footer-widget usefull-link">
-								<h3>Useful Links</h3>
-								<ul>
-									<li><a href="#"><i class="fa fa-angle-right"></i>About Us</a></li>
-									<li><a href="#"><i class="fa fa-angle-right"></i>Services</a></li>
-									<li><a href="#"><i class="fa fa-angle-right"></i>Works</a></li>
-									<li><a href="#"><i class="fa fa-angle-right"></i>Contact</a></li>
-									<li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
-									<li><a href="#"><i class="fa fa-angle-right"></i>Privacy Policy</a></li>
-									<li><a href="#"><i class="fa fa-angle-right"></i>Blog</a></li>
-								</ul>
-							</div>
-						</div><!-- end single footer widget -->
-
-						<!-- start single footer widget -->
-						<div class="col-sm-6 col-md-3">
-							<div class="footer-widget latest-post">
-								<h3>Latest Post</h3>
-								<ul>
-									<li>
-										<img src="assets/img/latest-post/1.png" alt="" />
-										<p><a href="#">Headset No Longer Wire For Sound</a></p>
-										<span>12 May 2016</span>
-
-									</li>
-									<li>
-										<img src="assets/img/latest-post/2.png" alt="" />
-										<p><a href="#">Headset No Longer Wire For Sound</a></p>
-										<span>12 May 2016</span>
-
-									</li>
-									<li>
-										<img src="assets/img/latest-post/3.png" alt="" />
-										<p><a href="#">Headset No Longer Wire For Sound</a></p>
-										<span>12 May 2016</span>
-
-									</li>
-
-								</ul>
-							</div>
-						</div><!-- end single footer widget -->
-
-						<!-- start single footer widget -->
-						<div class="col-sm-6 col-md-3">
-							<div class="footer-widget news-letter">
-								<h3>NewsLetter Subscription</h3>
-								<p>Subscribe to get the latest news, update and offer information. Don't worry, we won't send spam!</p>
-
-								<form class="subscribe-form mailchimp" method="post">
-                                    <div class="clearfix">
-                                        <div class="input-wrapper">
-                                          <label class="sr-only" for="email">Email</label>
-                                          <input id="subscribeEmail" type="email" name="subscribeEmail" class="validate form-control" placeholder="Your Email Please!">
-                                          <button type="submit"><i class="fa fa-arrow-circle-right"></i></button>
-                                        </div>
-                                    </div>
-                                    <!-- to showing success messages -->
-                                    <p class="subscription-success"></p>
-								</form>
-							</div><!-- /.news-letter -->
-						</div><!-- end single footer widget -->
-					</div><!-- /.row -->
-				</div><!-- /.container -->
-			</div><!-- /.primary-footer -->
 
 			<!-- footer copyright area -->
 			<div class="copyright-wrapper text-center">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<p>Copyright@2017 Neuron Finance Inc. All Rights Reserved. Beautiful WordPress Theme By <a href="#">TrendyTheme</a></p>
+							<p>TSD - Tangy Software Development | Tópico 3 | Facultad de Informática | <a href="contact.html">Conócenos</a></p>
 						</div>
 					</div><!-- /.row -->
 				</div><!-- /.container -->
