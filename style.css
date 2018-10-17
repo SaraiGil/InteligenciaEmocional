@@ -1189,7 +1189,7 @@ a:focus{
 
 .post-wrapper{
 	box-shadow: 0 49px 72px 0 rgba(25, 25, 25, 0.12);
-	padding-bottom: 30px;
+	/* padding-bottom: 30px; */
 }
 .post-wrapper .blog-content{
 	padding: 15px 20px 15px 40px;
