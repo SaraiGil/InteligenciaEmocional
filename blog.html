@@ -38,11 +38,19 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="assets/css/partner_style.css">
+		<script type="text/javascript" src="assets/js/partner_brain.js"></script>
 	</head>
 
 
-	<body>
-	
+	<body onload="live(false)">
+		<audio id="audioPlayer" src=""></audio>
+		<div id="divBtnMute"><button onclick="mute()">Silencio</button></div>
+		<div id="virtualPartner"><img src="assets/img/partner.png" onclick="walkOut()"></div>
+		<div id="virtualPartnerSpeechBubble" class="speech-bubble">
+			<p>Hello!</p>
+		</div>
+
 		<!-- ::::::::::::::::::::: Header Section:::::::::::::::::::::::::: -->
 		<header>
 			<!-- start top bar -->
@@ -61,7 +69,7 @@
 								</p>
 							</div><!-- /.contact -->
 						</div><!-- /.col-sm-8 -->
-						
+
 						<div class="col-sm-4">
 							<div class="social-icon">
 								<ul>
@@ -76,7 +84,7 @@
 					</div><!-- /.row -->
 				</div><!-- /.container -->
 			</div><!-- end top bar -->
-			
+
 	        <!-- Start Navigation -->
 	        <nav class="navbar navbar-default navbar-sticky bootsnav">
 	            <!-- Start Top Search -->
@@ -160,7 +168,7 @@
 	        <!-- End Navigation -->
 	        <div class="clearfix"></div>
 		</header> <!-- end header -->
-	
+
 
 		<!-- ::::::::::::::::::::: Page title:::::::::::::::::::::::::: -->
 		<section class="page-title">
@@ -176,9 +184,9 @@
 				</div>
 			</div>
 		</section><!-- end breadcrumb -->
-	
-	
-	
+
+
+
 		<!-- ::::::::::::::::::::: Blog Section:::::::::::::::::::::::::: -->
 		<section class="blog section-padding">
 			<div class="container">
@@ -191,9 +199,9 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="row">
-				
+
 					<!-- single blog item -->
 					<div class="col-sm-6 col-md-4">
 						<div class="blog-item">
@@ -214,7 +222,7 @@
 										<h2 class="entry-title"><a href="blog-details.html">How To Put Movies On Iphone</a></h2>
 									</div>
 								</header>
-								
+
 								<!-- blog content -->
 								<div class="entry-content">
 									<p>Recently I came across an exciting video on the internet. The video was packed with information about marketing effect for themselves, than they could </p>
@@ -244,7 +252,7 @@
 										<h2 class="entry-title"><a href="blog-details.html">How To Put Movies On Iphone</a></h2>
 									</div>
 								</header>
-								
+
 								<!-- blog content -->
 								<div class="entry-content">
 									<p>Recently I came across an exciting video on the internet. The video was packed with information about marketing effect for themselves, than they could </p>
@@ -274,7 +282,7 @@
 										<h2 class="entry-title"><a href="blog-details.html">How To Put Movies On Iphone</a></h2>
 									</div>
 								</header>
-								
+
 								<!-- blog content -->
 								<div class="entry-content">
 									<p>Recently I came across an exciting video on the internet. The video was packed with information about marketing effect for themselves, than they could </p>
@@ -304,7 +312,7 @@
 										<h2 class="entry-title"><a href="blog-details.html">How To Put Movies On Iphone</a></h2>
 									</div>
 								</header>
-								
+
 								<!-- blog content -->
 								<div class="entry-content">
 									<p>Recently I came across an exciting video on the internet. The video was packed with information about marketing effect for themselves, than they could </p>
@@ -334,7 +342,7 @@
 										<h2 class="entry-title"><a href="blog-details.html">How To Put Movies On Iphone</a></h2>
 									</div>
 								</header>
-								
+
 								<!-- blog content -->
 								<div class="entry-content">
 									<p>Recently I came across an exciting video on the internet. The video was packed with information about marketing effect for themselves, than they could </p>
@@ -364,7 +372,7 @@
 										<h2 class="entry-title"><a href="blog-details.html">How To Put Movies On Iphone</a></h2>
 									</div>
 								</header>
-								
+
 								<!-- blog content -->
 								<div class="entry-content">
 									<p>Recently I came across an exciting video on the internet. The video was packed with information about marketing effect for themselves, than they could </p>
@@ -394,7 +402,7 @@
 										<h2 class="entry-title"><a href="blog-details.html">How To Put Movies On Iphone</a></h2>
 									</div>
 								</header>
-								
+
 								<!-- blog content -->
 								<div class="entry-content">
 									<p>Recently I came across an exciting video on the internet. The video was packed with information about marketing effect for themselves, than they could </p>
@@ -424,7 +432,7 @@
 										<h2 class="entry-title"><a href="blog-details.html">How To Put Movies On Iphone</a></h2>
 									</div>
 								</header>
-								
+
 								<!-- blog content -->
 								<div class="entry-content">
 									<p>Recently I came across an exciting video on the internet. The video was packed with information about marketing effect for themselves, than they could </p>
@@ -454,7 +462,7 @@
 										<h2 class="entry-title"><a href="blog-details.html">How To Put Movies On Iphone</a></h2>
 									</div>
 								</header>
-								
+
 								<!-- blog content -->
 								<div class="entry-content">
 									<p>Recently I came across an exciting video on the internet. The video was packed with information about marketing effect for themselves, than they could </p>
@@ -467,9 +475,9 @@
 				</div>
 			</div>
 		</section><!-- end blog section -->
-	
-	
-	
+
+
+
 		<!-- ::::::::::::::::::::: Footer Section:::::::::::::::::::::::::: -->
 		<footer>
 			<div class="primary-footer">
@@ -488,12 +496,12 @@
 								</div>
 							</div>
 						</div><!-- end single footer widget -->
-						
+
 						<!-- start single footer widget -->
 						<div class="col-sm-6 col-md-2">
 							<div class="footer-widget usefull-link">
 								<h3>Useful Links</h3>
-								<ul> 
+								<ul>
 									<li><a href="#"><i class="fa fa-angle-right"></i>About Us</a></li>
 									<li><a href="#"><i class="fa fa-angle-right"></i>Services</a></li>
 									<li><a href="#"><i class="fa fa-angle-right"></i>Works</a></li>
@@ -504,7 +512,7 @@
 								</ul>
 							</div>
 						</div><!-- end single footer widget -->
-						
+
 						<!-- start single footer widget -->
 						<div class="col-sm-6 col-md-3">
 							<div class="footer-widget latest-post">
@@ -514,25 +522,25 @@
 										<img src="assets/img/latest-post/1.png" alt="" />
 										<p><a href="#">Headset No Longer Wire For Sound</a></p>
 										<span>12 May 2016</span>
-										
+
 									</li>
 									<li>
 										<img src="assets/img/latest-post/2.png" alt="" />
 										<p><a href="#">Headset No Longer Wire For Sound</a></p>
 										<span>12 May 2016</span>
-										
+
 									</li>
 									<li>
 										<img src="assets/img/latest-post/3.png" alt="" />
 										<p><a href="#">Headset No Longer Wire For Sound</a></p>
 										<span>12 May 2016</span>
-										
+
 									</li>
-									
+
 								</ul>
 							</div>
 						</div><!-- end single footer widget -->
-						
+
 						<!-- start single footer widget -->
 						<div class="col-sm-6 col-md-3">
 							<div class="footer-widget news-letter">
@@ -587,7 +595,7 @@
 		<script src="assets/js/owl.carousel.min.js"></script>
 		<script src="assets/js/wow.min.js"></script>
         <script src="assets/js/ajaxchimp.js"></script>
-        <script src="assets/js/ajaxchimp-config.js"></script> 
+        <script src="assets/js/ajaxchimp-config.js"></script>
 		<script src="assets/js/script.js"></script>
 	</body>
 </html>
