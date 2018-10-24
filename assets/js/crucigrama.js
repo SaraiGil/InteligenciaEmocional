@@ -20,3 +20,13 @@ function revisarCrucigrama()
 		alert('Felicidades');
 	}
 }
+
+function limpiarCrucigrama()
+{
+	for (i = 0; i < 51; i++)
+	{
+		document.getElementById('letra' + (i+1)).value = "";
+		document.getElementById('letra'+(i+1)).style = "color: black";
+		ganador = false;
+	}
+}
