@@ -374,6 +374,7 @@ ul.cart-list > li.total > span{
   width: 250px;
   height: 80px;
   padding: 0px !important;
+  /* margin-bottom: 5px !important; */
 }
 
 body{
