@@ -174,14 +174,15 @@
 								</table>
 								<br>
 								<div class="col-md-10">
-										<button class="subscribe-form button">Ver tabla con filtros</button>
-										<button class="subscribe-form button">Ver mejores resultados</button>
+										<button class="subscribe-form button"><a href="#filtros">Ver tabla con filtros</a></button>
+										<button class="subscribe-form button"><a href="#mejores">Ver mejores resultados</a></button>
 								</div>
           		</div>
+							<hr>
 
 
-                <div class="row">
-                    <div class="col-md-6">
+                <div class="row" id="filtros">
+                    <!-- <div class="col-md-6"> -->
                         <h5>Filtros</h5>
 												<table class="table"style="width:100%">
 													<tr>
@@ -197,134 +198,74 @@
 												    <td class="tD">94</td>
 												  </tr>
 												</table>
-                    </div>
-                    <div class="col-md-6">
-                        <button class="subscribe-form button">Aplicar Filtro</button>
-                    </div>
+                    <!-- </div> -->
                 </div>
 
-                <!-- <br>
+										<!-- Tabla con resultados -->
+										<div class="row">
+													<button class="subscribe-form button">Aplicar Filtro</button>
+													<br><hr>
+		                    <!-- <div class="col-md-6"> -->
+														<table class="table"style="width:100%">
+															<tr>
+														    <th class="tH">IQ</th>
+														    <th class="tH">Creatividad</th>
+																<th class="tH">Solución de Problemas</th>
+														    <th class="tH">Trabajo en Equipo</th>
+																<th class="tH">Total</th>
+														  </tr>
+														  <tr>
+														    <td class="tD">8</td>
+														    <td class="tD">7</td>
+																<td class="tD">10</td>
+														    <td class="tD">9</td>
+																<td class="tD">7.5</td>
+														  </tr>
+														</table>
+		                    <!-- </div> -->
 
-                <p><strong>This is Only Bold Text</strong> eget diam posuere sollicitudin eu tincidunt nulla. <b><i>This is Bold italic Text</i></b> magna, in scelerisque urna placerat vel.  egestas quis facilisis metus.Phasellus <b><a href="#"><u>This is Link Text</u></a></b> diam posuere llicitudin eu tincidunt nulla rabitur eleifen tempor inted magna in scelerisqu urna placerat vel. Phasellus eget sem id justo consequat egestas quis facilisis metus.Phasellus vehicula justo eget diam posuere sollicitudin eu tincidunt nulla ma gna elerisque urna placerat vel. Phsellus eget sem id justo consequ egestas quis facilisis metus.</p>
+										<!-- Tabla y graficas con los 3 mejores -->
+										<!-- Tabla con resultados -->
+										<div class="row" id="mejores">
+		                    <!-- <div class="col-md-6"> -->
+		                        <h5>Mejores Resultados</h5>
+														<table class="table"style="width:100%">
+															<tr>
+																<th class="tH">Nombre</th>
+														    <th class="tH">IQ</th>
+														    <th class="tH">Creatividad</th>
+																<th class="tH">Solución de Problemas</th>
+														    <th class="tH">Trabajo en Equipo</th>
+																<th class="tH">Total</th>
+														  </tr>
+														  <tr>
+																<td class="tD">Nombre 1</td>
+														    <td class="tD">8</td>
+														    <td class="tD">7</td>
+																<td class="tD">10</td>
+														    <td class="tD">9</td>
+																<td class="tD">7.5</td>
+														  </tr>
+															<tr>
+																<td class="tD">Nombre 2</td>
+														    <td class="tD">8</td>
+														    <td class="tD">7</td>
+																<td class="tD">10</td>
+														    <td class="tD">9</td>
+																<td class="tD">7.5</td>
+														  </tr>
+															<tr>
+																<td class="tD">Nombre 3</td>
+														    <td class="tD">8</td>
+														    <td class="tD">7</td>
+																<td class="tD">10</td>
+														    <td class="tD">9</td>
+																<td class="tD">7.5</td>
+														  </tr>
+														</table>
 
-
-                <br>
-                <br>
-
-                <h2>Blockquote</h2>
-                <hr>
-
-                <blockquote>
-                    <p>Continually underwhelm visionary models with cross-unit synergy. Uniquely leverage other's premium convergence before progressive data. Proactively monetize performance based expertise through intuitive alignments. Monotonectally promote worldwide portals through ubiquitous relationships.</p>
-                    <footer>Ralph Waldo Emerson</footer>
-                </blockquote> -->
-
-                <!-- <br> -->
-
-                <!-- <h2>List  Style</h2> -->
-                <!-- <hr> -->
-
-                <!-- <div class="row">
-                    <div class="col-sm-3">
-                        <ol>
-                            <li>Ordered List Style</li>
-                            <li>Ordered List Style</li>
-                            <li>Ordered List Style</li>
-                            <li>Ordered List Style</li>
-                            <li>Ordered List Style</li>
-                        </ol>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <ul class="unorder-list">
-                            <li>Unordered List Style</li>
-                            <li>Unordered List Style</li>
-                            <li>Unordered List Style</li>
-                            <li>Unordered List Style</li>
-                            <li>Unordered List Style</li>
-                        </ul>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <ul class="list-unstyled">
-                            <li>Default list-unstyled</li>
-                            <li>Default list-unstyled</li>
-                            <li>Default list-unstyled</li>
-                            <li>Default list-unstyled</li>
-                            <li>Default list-unstyled</li>
-                        </ul>
-                    </div>
-
-                    <div class="col-sm-3">
-                        <ul>
-                            <li class="">Default List One</li>
-                            <li class="text-info">Default List Two</li>
-                            <li class="text-success">Default List Three</li>
-                            <li class="text-warning">Default List Four</li>
-                            <li class="text-danger">Default List Five</li>
-                        </ul>
-                    </div>
-                </div> -->
-
-
-
-              <!-- <hr> -->
-
-              <!-- <h3>Full Column</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptatem deleniti, iusto porro quasi aut est incidunt eum. Aliquid earum, culpa dolores aspernatur tempore velit beatae porro totam. Et, saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eos assumenda, mollitia tenetur atque recusandae dignissimos optio cum molestiae possimus adipisci minima, aliquam perferendis eius et repellat soluta magni, delectus!</p> -->
-
-              <!-- <hr> -->
-
-              <!-- <div class="row ">
-                <div class="col-sm-6">
-                  <h3>One Half</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptatem deleniti, iusto porro quasi aut est incidunt eum. Aliquid earum, culpa dolores aspernatur tempore velit beatae porro totam. Et, saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eos assumenda, mollitia tenetur atque recusandae dignissimos optio cum molestiae possimus adipisci minima.</p>
-                </div>
-
-                <div class="col-sm-6">
-                  <h3>One Half</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptatem deleniti, iusto porro quasi aut est incidunt eum. Aliquid earum, culpa dolores aspernatur tempore velit beatae porro totam. Et, saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eos assumenda, mollitia tenetur atque recusandae dignissimos optio cum molestiae possimus adipisci minima.</p>
-                </div>
-              </div>/.row -->
-
-              <!-- <hr> -->
-
-              <!-- <div class="row ">
-                <div class="col-sm-4">
-                  <h3>One Third</h3>
-                  <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Ducimus volup tatem deleniti, iusto porro quasi aut est inci dunt eum. Aliq uid earum, culpa dolores asper natur tempore velit bea tae porro totam. Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Ut eos assumenda, mollitia tenetur.</p>
-                </div>
-                <div class="col-sm-4">
-                  <h3>One Third</h3>
-                  <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Ducimus volup tatem deleniti, iusto porro quasi aut est inci dunt eum. Aliq uid earum, culpa dolores asper natur tempore velit bea tae porro totam. Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Ut eos assumenda, mollitia tenetur.</p>
-                </div>
-                <div class="col-sm-4">
-                  <h3>One Third</h3>
-                  <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Ducimus volup tatem deleniti, iusto porro quasi aut est inci dunt eum. Aliq uid earum, culpa dolores asper natur tempore velit bea tae porro totam. Lorem ipsum dolor sit amet, consec tetur adipis icing elit. Ut eos assumenda, mollitia tenetur.</p>
-                </div>
-              </div>/.row --> -->
-
-              <!-- <hr> -->
-
-              <!-- <div class="row ">
-                <div class="col-sm-3">
-                  <h3>One Fourth</h3>
-                  <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Ducimus volup tatem deleniti, iusto porro quasi aut elit est inci dunt eum. Aliq uid earum, culpa dolores asper natur tempore.</p>
-                </div>
-                <div class="col-sm-3">
-                  <h3>One Fourth</h3>
-                  <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Ducimus volup tatem deleniti, iusto porro quasi aut elit est inci dunt eum. Aliq uid earum, culpa dolores asper natur tempore.</p>
-                </div>
-                <div class="col-sm-3">
-                  <h3>One Fourth</h3>
-                  <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Ducimus volup tatem deleniti, iusto porro quasi aut elit est inci dunt eum. Aliq uid earum, culpa dolores asper natur tempore.</p>
-                </div>
-                <div class="col-sm-3">
-                  <h3>One Fourth</h3>
-                  <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing elit. Ducimus volup tatem deleniti, iusto porro quasi aut elit est inci dunt eum. Aliq uid earum, culpa dolores asper natur tempore.</p>
-                </div>
-              </div>/.row --> -->
-
+														<br><h5>Gráficas</h5>
+		                    <!-- </div> -->
 
             </div><!-- /.container -->
         </section>
