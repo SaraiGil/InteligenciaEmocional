@@ -150,13 +150,13 @@ h6{
     font-weight: 400;
 }
 
-table {
+.table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
 
-td, th {
+.tD, .tH {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
@@ -1566,4 +1566,17 @@ li.rating ul i {
 -------------------------- */
 .whiteText{
 	color: #fff;
+}
+
+
+.btnTest{
+	border-radius: 5px;
+  background: #3452FF;
+  padding: 15px 25px;
+  border: none;
+  color: #fff;
+  font-family: "Titillium Web",sans-serif;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  display: inline-block;
 }

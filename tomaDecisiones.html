@@ -120,32 +120,26 @@
 	 <!-- heading section start -->
         <section class="section-padding">
             <div class="container">
-
-
-                <div class="row">
-									<table style="width:100%">
-										<tr>
-									    <th>Nombre Completo</th>
-									    <th>IQ</th>
-									    <th>Creatividad</th>
-											<th>Solución de Problemas</th>
-									    <th>Trabajo en Equipo</th>
-									  </tr>
-									  <tr>
-									    <td>Jill</td>
-									    <td>Smith</td>
-									    <td>50</td>
-											<td>Smith</td>
-									    <td>50</td>
-									  </tr>
-									  <tr>
-									    <td>Eve</td>
-									    <td>Jackson</td>
-									    <td>94</td>
-											<td>Jackson</td>
-									    <td>94</td>
-									  </tr>
-									</table>
+							<div class="row">
+									<div class="col-md-10">
+											<h3>Nuevo Registro</h3>
+									</div>
+									<div class="col-md-6">
+											<h5>Escribe tu nombre completo</h5>
+											<input type="text" placeholder="Nombre Completo">
+									</div>
+									<div class="col-md-6">
+											<h5>Califica del 1 al 10 las siguientes opciones:</h5><br>
+											Coeficiente Intelectual: <input type="number"  placeholder="IQ"><br>
+											Creatividad: <input type="number" placeholder="Creatividad"><br>
+											Solución de Problemas: <input type="number" placeholder="Solución de Problemas"><br>
+											Trabajo en Equipo: <input type="number" placeholder="Trabajo en Equipo">
+									</div>
+									<div class="col-md-2">
+											<button class="subscribe-form button">Registrar</button>
+									</div>
+							</div>
+							<hr><br>
                     <!-- <div class="col-md-6">
                         <h1>H1 Heading</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, quis, tempora! Suscipit ex reprehenderit eius nulla adipisci ipsum in eaque perferendis laboriosam ad accusantium, architecto aliquid, voluptates culpa minus, ab!</p>
@@ -154,40 +148,60 @@
                         <h2>H2 Heading</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vel culpa magnam ea, aliquam dolores dolor architecto, facere nesciunt. Temporibus reiciendis culpa quidem nemo ex, deleniti, quod eveniet nihil voluptatibus.</p>
                     </div> -->
-                </div>
-								<hr><br>
-                <div class="row">
-										<div class="col-md-10">
-												<h3>Nuevo Registro</h3>
-										</div>
-                    <div class="col-md-6">
-												<h5>Escribe tu nombre completo</h5>
-                        <input type="text" placeholder="Nombre Completo">
-                    </div>
-                    <div class="col-md-6">
-												<h5>Califica del 1 al 10 las siguientes opciones:</h5><br>
-                        Coeficiente Intelectual: <input type="number"  placeholder="IQ"><br>
-												Creatividad: <input type="number" placeholder="Creatividad"><br>
-												Solución de Problemas: <input type="number" placeholder="Solución de Problemas"><br>
-												Trabajo en Equipo: <input type="number" placeholder="Trabajo en Equipo">
-                    </div>
-										<div class="col-md-10">
-												<button class="subscribe-form button">Registrar</button>
-												<button class="subscribe-form button">Ver tabla con filtros</button>
-												<button class="subscribe-form button">Ver mejores resultados</button>
-										</div>
-                </div>
+							<div class="row" id="seccion1">
+								<table class="table"style="width:100%">
+									<tr>
+								    <th class="tH">Nombre Completo</th>
+								    <th class="tH">IQ</th>
+								    <th class="tH">Creatividad</th>
+										<th class="tH">Solución de Problemas</th>
+								    <th class="tH">Trabajo en Equipo</th>
+								  </tr>
+								  <tr>
+								    <td class="tD">Jill</td>
+								    <td class="tD">Smith</td>
+								    <td class="tD">50</td>
+										<td class="tD">Smith</td>
+								    <td class="tD">50</td>
+								  </tr>
+								  <tr>
+								    <td class="tD">Eve</td>
+								    <td class="tD">Jackson</td>
+								    <td class="tD">94</td>
+										<td class="tD">Jackson</td>
+								    <td class="tD">94</td>
+								  </tr>
+								</table>
+								<br>
+								<div class="col-md-10">
+										<button class="subscribe-form button">Ver tabla con filtros</button>
+										<button class="subscribe-form button">Ver mejores resultados</button>
+								</div>
+          		</div>
 
-                <!-- <div class="row">
+
+                <div class="row">
                     <div class="col-md-6">
-                        <h5>H5 Heading</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ad perspiciatis provident dolores voluptatem, rem nostrum porro, delectus neque adipisci deserunt consectetur natus, enim quibusdam dicta placeat eum. Cumque, nesciunt.</p>
+                        <h5>Filtros</h5>
+												<table class="table"style="width:100%">
+													<tr>
+												    <th class="tH">IQ</th>
+												    <th class="tH">Creatividad</th>
+														<th class="tH">Solución de Problemas</th>
+												    <th class="tH">Trabajo en Equipo</th>
+												  </tr>
+												  <tr>
+												    <td class="tD">70%</td>
+												    <td class="tD">20&</td>
+														<td class="tD">5%</td>
+												    <td class="tD">94</td>
+												  </tr>
+												</table>
                     </div>
                     <div class="col-md-6">
-                        <h6>H6 Heading</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consectetur consequatur, ut, eius distinctio omnis. Necessitatibus vel eaque officia? Consequatur laboriosam voluptates ut quaerat ad mollitia error veritatis neque porro.</p>
+                        <button class="subscribe-form button">Aplicar Filtro</button>
                     </div>
-                </div> -->
+                </div>
 
                 <!-- <br>
 
