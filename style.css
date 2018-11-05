@@ -151,9 +151,13 @@ h6{
 }
 
 .table {
-    font-family: arial, sans-serif;
+    /* font-family: arial, sans-serif; */
     border-collapse: collapse;
     width: 100%;
+}
+
+.tH{
+	font-family: sans-serif;
 }
 
 .tD, .tH {
@@ -167,6 +171,16 @@ tr:nth-child(even) {
 }
 
 /* ================ Global setting ================== */
+input[type=text],input[type=number]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 input:focus,
 textarea:focus {
 	outline: none;
@@ -222,6 +236,7 @@ img {
 		margin-bottom: 30px;
 	}
 }
+
 
 
 /* Remove Chrome Input Field's Unwanted Yellow Background Color */
@@ -1568,6 +1583,17 @@ li.rating ul i {
 	color: #fff;
 }
 
+.btnMute{
+	border-radius: 5px;
+  background: #A0A0A0;
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  font-family: "Titillium Web",sans-serif;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  display: inline-block;
+}
 
 .btnTest{
 	border-radius: 5px;
