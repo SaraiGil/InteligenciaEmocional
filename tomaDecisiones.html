@@ -42,10 +42,11 @@
 		<script type="text/javascript" src="assets/js/partner_brain.js"></script>
 		<link rel="stylesheet" type="text/css" href="assets/css/crucigrama.css">
 		<script type="text/javascript" src="assets/js/crucigrama.js"></script>
+    <script type="text/javascript" src="assets/js/tomaDecisiones.js"></script>
 	</head>
 
 
-	<bodyonload="live(false)">
+	<body onload="live(false)">
 		<audio id="audioPlayer" src=""></audio>
 		<div id="divBtnMute"><button onclick="mute()">Silencio</button></div>
 		<div id="virtualPartner"><img src="assets/img/partner.png" onclick="walkOut()"></div>
@@ -126,17 +127,17 @@
 									</div>
 									<div class="col-md-6">
 											<h5>Escribe tu nombre completo</h5>
-											<input type="text" placeholder="Nombre Completo">
+											<input type="text" placeholder="Nombre Completo" id="usNombre">
 									</div>
 									<div class="col-md-6">
 											<h5>Califica del 1 al 10 las siguientes opciones:</h5><br>
-											Coeficiente Intelectual: <input type="number"  placeholder="IQ"><br>
-											Creatividad: <input type="number" placeholder="Creatividad"><br>
-											Solución de Problemas: <input type="number" placeholder="Solución de Problemas"><br>
-											Trabajo en Equipo: <input type="number" placeholder="Trabajo en Equipo">
+											Coeficiente Intelectual: <input type="number"  placeholder="IQ" id="usIQ"><br>
+                      Creatividad: <input type="number" placeholder="Creatividad" id="usCreatividad"><br>
+                      Solución de Problemas: <input type="number" placeholder="Solución de Problemas" id="usSolProbl"><br>
+                      Trabajo en Equipo: <input type="number" placeholder="Trabajo en Equipo" id="usTrabEquipo">
 									</div>
 									<div class="col-md-2">
-											<button class="subscribe-form button">Registrar</button>
+											<button class="subscribe-form button" onclick="registrar()">Registrar</button>
 									</div>
 							</div>
 							<hr><br>
@@ -149,7 +150,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vel culpa magnam ea, aliquam dolores dolor architecto, facere nesciunt. Temporibus reiciendis culpa quidem nemo ex, deleniti, quod eveniet nihil voluptatibus.</p>
                     </div> -->
 							<div class="row" id="seccion1">
-								<table class="table"style="width:100%">
+								<table class="table"style="width:100%" id="tabla">
 									<tr>
 								    <th class="tH">Nombre Completo</th>
 								    <th class="tH">IQ</th>
@@ -157,25 +158,11 @@
 										<th class="tH">Solución de Problemas</th>
 								    <th class="tH">Trabajo en Equipo</th>
 								  </tr>
-								  <tr>
-								    <td class="tD">Jill</td>
-								    <td class="tD">Smith</td>
-								    <td class="tD">50</td>
-										<td class="tD">Smith</td>
-								    <td class="tD">50</td>
-								  </tr>
-								  <tr>
-								    <td class="tD">Eve</td>
-								    <td class="tD">Jackson</td>
-								    <td class="tD">94</td>
-										<td class="tD">Jackson</td>
-								    <td class="tD">94</td>
-								  </tr>
 								</table>
 								<br>
 								<div class="col-md-10">
-										<button class="subscribe-form button"><a href="#filtros">Ver tabla con filtros</a></button>
-										<button class="subscribe-form button"><a href="#mejores">Ver mejores resultados</a></button>
+										<button class="subscribe-form button" onclick="filtrarResultados()">Ver tabla con filtros</button>
+										<button class="subscribe-form button" onclick="mostrarResultados('best')">Ver mejores resultados</button>
 								</div>
           		</div>
 							<hr>
@@ -192,20 +179,20 @@
 												    <th class="tH">Trabajo en Equipo</th>
 												  </tr>
 												  <tr>
-												    <td class="tD">70%</td>
-												    <td class="tD">20&</td>
-														<td class="tD">5%</td>
-												    <td class="tD">94</td>
+												    <td class="tD"><input type="number" min="1" max="10" id="filtroIQ" placeholder="7"></td>
+												    <td class="tD"><input type="number" min="1" max="10" id="filtroCreatividad" placeholder="2"></td>
+														<td class="tD"><input type="number" min="1" max="10" id="filtroSolProbl" placeholder="5"></td>
+												    <td class="tD"><input type="number" min="1" max="10" id="filtroTrabEquipo" placeholder="9"></td>
 												  </tr>
 												</table>
                     <!-- </div> -->
                 </div>
 
 										<!-- Tabla con resultados -->
-										<div class="row">
+										<!-- <div class="row">
 													<button class="subscribe-form button">Aplicar Filtro</button>
 													<br><hr>
-		                    <!-- <div class="col-md-6"> -->
+		                    <!-- <div class="col-md-6">
 														<table class="table"style="width:100%">
 															<tr>
 														    <th class="tH">IQ</th>
@@ -222,12 +209,12 @@
 																<td class="tD">7.5</td>
 														  </tr>
 														</table>
-		                    <!-- </div> -->
+		                    <!-- </div>
 
-										<!-- Tabla y graficas con los 3 mejores -->
-										<!-- Tabla con resultados -->
+										<!-- Tabla y graficas con los 3 mejores
+										<!-- Tabla con resultados
 										<div class="row" id="mejores">
-		                    <!-- <div class="col-md-6"> -->
+		                    <!-- <div class="col-md-6">
 		                        <h5>Mejores Resultados</h5>
 														<table class="table"style="width:100%">
 															<tr>
@@ -264,7 +251,7 @@
 														  </tr>
 														</table>
 
-														<br><h5>Gráficas</h5>
+														<br><h5>Gráficas</h5> -->
 		                    <!-- </div> -->
 
             </div><!-- /.container -->
