@@ -130,25 +130,23 @@
 											<input type="text" placeholder="Nombre Completo" id="usNombre">
 									</div>
 									<div class="col-md-6">
-											<h5>Califica del 1 al 10 las siguientes opciones:</h5><br>
-											Coeficiente Intelectual: <input type="number"  placeholder="IQ" id="usIQ"><br>
-                      Creatividad: <input type="number" placeholder="Creatividad" id="usCreatividad"><br>
-                      Solución de Problemas: <input type="number" placeholder="Solución de Problemas" id="usSolProbl"><br>
-                      Trabajo en Equipo: <input type="number" placeholder="Trabajo en Equipo" id="usTrabEquipo">
-									</div>
-									<div class="col-md-2">
-											<button class="subscribe-form button" onclick="registrar()">Registrar</button>
+											<h5>Califica del 1 al 10 las siguientes opciones:</h5>
+											<input type="number"  placeholder="Coeficiente intelectual" id="usIQ"><br>
+                      <input type="number" placeholder="Creatividad" id="usCreatividad"><br>
+                      <input type="number" placeholder="Solución de Problemas" id="usSolProbl"><br>
+                      <input type="number" placeholder="Trabajo en Equipo" id="usTrabEquipo">
 									</div>
 							</div>
+							<div class="row">
+								<div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+									<!-- blog title -->
+									<div class="template-title text-center">
+										<button class="subscribe-form button btnTest" onclick="registrar()">Registrar</button>
+									</div>
+          			</div>
+							</div>
 							<hr><br>
-                    <!-- <div class="col-md-6">
-                        <h1>H1 Heading</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, quis, tempora! Suscipit ex reprehenderit eius nulla adipisci ipsum in eaque perferendis laboriosam ad accusantium, architecto aliquid, voluptates culpa minus, ab!</p>
-                    </div>
-                    <div class="col-md-6">
-                        <h2>H2 Heading</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vel culpa magnam ea, aliquam dolores dolor architecto, facere nesciunt. Temporibus reiciendis culpa quidem nemo ex, deleniti, quod eveniet nihil voluptatibus.</p>
-                    </div> -->
+
 							<div class="row" id="seccion1">
 								<table class="table"style="width:100%" id="tabla">
 									<tr>
@@ -160,31 +158,38 @@
 								  </tr>
 								</table>
 								<br>
-								<div class="col-md-10">
-										<button class="subscribe-form button" onclick="filtrarResultados()">Ver tabla con filtros</button>
-										<button class="subscribe-form button" onclick="mostrarResultados('best')">Ver mejores resultados</button>
-								</div>
+								<div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+									<!-- blog title -->
+									<div class="template-title text-center">
+										<button class="subscribe-form button btnTest" onclick="filtrarResultados()">Ver tabla con filtros</button>
+										<button class="subscribe-form button btnTest" onclick="mostrarResultados('best')">Ver mejores resultados</button>
+									</div>
+								<!-- <div class="col-md-10">
+
+								</div> -->
           		</div>
-							<hr>
+							<br><hr>
 
 
                 <div class="row" id="filtros">
-                    <!-- <div class="col-md-6"> -->
-                        <h5>Filtros</h5>
-												<table class="table"style="width:100%">
-													<tr>
-												    <th class="tH">IQ</th>
-												    <th class="tH">Creatividad</th>
-														<th class="tH">Solución de Problemas</th>
-												    <th class="tH">Trabajo en Equipo</th>
-												  </tr>
-												  <tr>
-												    <td class="tD"><input type="number" min="1" max="10" id="filtroIQ" placeholder="7"></td>
-												    <td class="tD"><input type="number" min="1" max="10" id="filtroCreatividad" placeholder="2"></td>
-														<td class="tD"><input type="number" min="1" max="10" id="filtroSolProbl" placeholder="5"></td>
-												    <td class="tD"><input type="number" min="1" max="10" id="filtroTrabEquipo" placeholder="9"></td>
-												  </tr>
-												</table>
+                    <div class="template-title text-center">
+											<br>
+											<h5>Filtros</h5>
+											<table class="table"style="width:100%">
+												<tr>
+													<th class="tH">IQ</th>
+													<th class="tH">Creatividad</th>
+													<th class="tH">Solución de Problemas</th>
+													<th class="tH">Trabajo en Equipo</th>
+												</tr>
+												<tr>
+													<td class="tD"><input type="number" min="1" max="10" id="filtroIQ" placeholder="7"></td>
+													<td class="tD"><input type="number" min="1" max="10" id="filtroCreatividad" placeholder="2"></td>
+													<td class="tD"><input type="number" min="1" max="10" id="filtroSolProbl" placeholder="5"></td>
+													<td class="tD"><input type="number" min="1" max="10" id="filtroTrabEquipo" placeholder="9"></td>
+												</tr>
+											</table>
+										</div>
                     <!-- </div> -->
                 </div>
 
